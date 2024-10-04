@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài Tập Về Nhà Buổi 2 JS</title>
+    <link rel="stylesheet" href="../src/css/output.css">
+</head>
+<body>
+    <!-- Bài tập tính lương nhân viên -->
+    <div class="container">
+        <form action="" id="myForm">
+        <div>
+            <h2 class="bg-blue-200 text-center text-lg font-medium rounded-lg p-4">Bài tập tính lương nhân viên</h2>
+            <p class="bg-sky-100 rounded-xl text-center mt-5 font-light">
+                1. Viết đề bài cho bài tập tính lương nhân viên <br>
+                2. Viết chương trình tính lương nhân viên <br>
+                3. Lương nhân viên trong 1 ngày sẽ là 100.000 <br>
+                4. Công thức tính lương nhân viên = lương một ngày * số ngày làm việc <br>
+                5. Cho người dùng nhập vào số ngày làm việc thông qua input <br>
+            </p>
+        </div>
+        <div class="mt-5 bg-sky-50 rounded-lg flex flex-col items-center justify-center">
+            <!-- Tên nhân viên -->
+                <label for="">Tên nhân viên: </label>
+                <input id="name" class="border-2 border-sky-600 rounded-xl" type="text" placeholder="Nhập tên nhân viên">
+            <!-- Lương 1 ngày -->
+                <label for="">Nhập lương 1 ngày làm: </label>
+                <input id="luong1Ngay" class="border-2 border-sky-600 rounded-xl" type="text" placeholder="Nhập lương 1 ngày làm">
+            <!-- Số ngày làm -->
+                <label for="">Nhập số ngày làm: </label>
+                <input id="soNgayLam" class="border-2 border-sky-600 rounded-xl" type="text" placeholder="Nhập số ngày làm">
+            <button id="login" class="bg-blue-200 border-2 border-sky-400 p-2 rounded-xl mt-5">Tính lương nhân viên</button>
+        </div>
+        <div>
+            <p id="result" class="bg-blue-200 border-2 border-blue-600 px-4 py-5 rounded-xl mt-5"></p>
+        </div>
+        </form>
+    </div>
+    <!-- Bài tập tính điểm trung bình -->
+    <div class="container mt-5">
+        <form action="" id="myForm2">
+            <div class="mt-5">
+                <h2 class="bg-pink-200 text-center text-lg font-medium rounded-lg p-4">Bài tập tính điểm trung bình</h2>
+                <p class="bg-pink-100 rounded-xl text-center mt-5 font-light">
+                    1. Viết chương trình nhập vào 5 số thực <br>
+                    2. Tính giá trị trung bình của 5 số này và xuất ra màn hình <br>
+                Gợi ý: Giá trị trung bình là tổng của 5 số người dùng nhập vào chia cho 5 
+                </p>
+            </div>
+            <div class="flex flex-col items-center justify-center mt-5 bg-pink-50 rounded-lg">
+                <label for="">Nhập vào số thứ nhất: </label>
+                <input type="text" class="border-2 border-pink-600 rounded-xl" id="So1" placeholder="So1">
+                <label for="">Nhập vào số thứ hai: </label>
+                <input type="text" class="border-2 border-pink-600 rounded-xl" id="So2" placeholder="So2">
+                <label for="">Nhập vào số thứ ba: </label>
+                <input type="text" class="border-2 border-pink-600 rounded-xl" id="So3" placeholder="So3">
+                <label for="">Nhập vào số thứ tư: </label>
+                <input type="text" class="border-2 border-pink-600 rounded-xl" id="So4" placeholder="So4">
+                <label for="">Nhập vào số thứ năm: </label>
+                <input type="text" class="border-2 border-pink-600 rounded-xl" id="So5" placeholder="So5">
+                <button id=" login2" class="bg-pink-200 border-2 border-pink-400 p-2 rounded-xl mt-5">Tính toán: </button>
+            </div>
+            <div>
+                <p id="result2" class="bg-pink-200 border-2 border-pink-600 px-4 py-5 rounded-xl mt-5"></p>
+            </div>
+        </form>
+    </div>
+    <!-- Bài tập tính chu vi và diện tích Hình chữ nhật  -->
+    <div class="container mt-5">
+        <form action="" id="myForm3">
+            <div class="mt-5">
+                <h2 class="bg-green-200 text-center text-lg font-medium rounded-lg p-4">Bài tập tính chu vi và diện tích hình chữ nhật</h2>
+                <p class="bg-green-100 rounded-xl text-center mt-5 font-light">
+                    1. Viết chương trình nhập vào chiều dài và chiều rộng của hình chữ nhật <br>
+                    2. Tính chu vi và diện tích hình chữ nhật từ các giá trị người dùng cung cấp <br>
+                    Gợi ý: Công thức tính chu vi là: (dài + rộng)*2 và diện tích sẽ bằng dài * rộng
+                </p>
+            </div>
+            <div class=" flex flex-col items-center justify-center bg-green-50 rounded-lg mt-5">
+                <label for="">Nhập chiều dài của hình chữ nhật</label>
+                <input type="text" class="border-2 border-green-600 rounded-xl" id="chieuDai" placeholder="Chieu dai HCN">
+                <label for="">Nhập chiều rộng của hình chữ nhật</label>
+                <input type="text" class="border-2 border-green-600 rounded-xl" id="chieuRong" placeholder="Chieu rong HCN">
+                <button class="bg-green-200 border-2 border-green-400 p-2 rounded-xl mt-5">Tính toán</button>
+            </div>
+            <div>
+                <p class="bg-green-200 border-2 border-green-600 px-4 py-2 rounded-xl mt-5" id="result4">Chu vi HCN: </p>
+                <p class="bg-green-200 border-2 border-green-600 px-4 py-2 rounded-xl mt-5" id="result5">Diện tích HCN: </p>
+            </div>
+        </form>
+    </div>
+    <!-- Bài tập quy đổi tiền tệ -->
+    <div class="container mt-5">
+        <form action="" id="myForm4">
+            <div>
+                <h2 class="bg-orange-200 text-center text-lg font-medium rounded-lg p-4">Bài tập quy đổi tiền tệ</h2>
+                <p class="bg-orange-100 rounded-xl text-center mt-5 font-light">
+                    1. Viết chương trình nhập vào giá USD hiện nay đang có và số lượng USD cần quy đổi <br>
+                    2. Tính tổng số tiền Việt nhận được sau khi người dùng quy đổi <br>
+                    Gợi ý: tổng số tiền nhận được tính bằng công thức giá USD * số lượng <br>
+                </p>
+            </div>
+            <div class="mt-5 flex flex-col items-center justify-center bg-orange-50 rounded-lg">
+                <label for="">Nhập vào giá trị USD hiện nay: </label>
+                <input type="text" id="giatriUSD" class="border-2 border-orange-600 rounded-xl" placeholder="Giá trị USD hiện nay">
+                <label for="">Số lượng USD cần đổi: </label>
+                <input type="text" id="soLuong" class="border-2 border-orange-600 rounded-xl" placeholder="Số lượng USD: $">
+                <button class="bg-orange-200 border-2 border-orange-400 p-2 rounded-xl mt-5">Tính tổng số tiền Việt nhận được</button>
+            </div>
+            <div><p class="bg-orange-200 border-2 border-orange-600 px-4 py-2 rounded-xl mt-5" id="result6" >Tổng số tiền Việt: </p></div>
+        </form>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+</html>
