@@ -54,3 +54,33 @@ let formLogin4 = document.querySelector("#myForm4");
 
         document.querySelector("#result6").innerHTML = "Tổng số tiền Việt nhận được là: " + " " + tongSoTien;
     }
+
+
+// Bài tập thay đổi màu nền của hộp
+document.querySelector("#clickBtn").onclick = function(){
+    let box = document.querySelector("#box");
+        box.classList.toggle("bg-black");
+    let text = document.querySelector("#text");
+        text.classList.toggle("text-white");
+}
+
+// Bài tập xây dựng light theme - dark theme
+document.querySelector("#btn").onclick = function(){
+    document.querySelector('body').classList.toggle('dark');
+}
+
+// Bài tập hiển thị mật khẩu
+// Xử lý button con mắt
+document.querySelector("#togglePassword").onclick = function(){
+    let tagP = document.createElement('p');
+    let password = document.querySelector("#password").value;
+    tagP.innerHTML = password;
+    let content_pw = document.querySelector("#content_pw");
+    content_pw.appendChild(tagP);
+}
+// Xử lý nút đăng nhập
+document.querySelector("#dangNhap").onclick = function(){
+    let hienThi = document.querySelector("#hienThi");
+    hienThi.innerHTML = "Đăng nhập thành công";
+    
+}

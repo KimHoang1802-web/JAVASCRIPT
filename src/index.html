@@ -111,6 +111,90 @@
             <div><p class="bg-orange-200 border-2 border-orange-600 px-4 py-2 rounded-xl mt-5" id="result6" >Tổng số tiền Việt: </p></div>
         </form>
     </div>
+
+    <!-- Bài tập thay đổi màu nền của hộp -->
+    <div class="container mt-10">
+        <h3 class="bg-sky-100 rounded-2xl border-2 border-sky-500 p-4 text-center text-3xl">Bài tập thay đổi màu nền của hộp</h3>
+        <div class="text-center mt-5 border-2 border-sky-500 rounded-xl">
+            <p>Yêu cầu:</p>
+            <ul class="text-balance">
+                <li>Cung cấp một nút button và một giao diện hộp</li>
+                <li>Nhấn nút button sẽ thay đổi nền từ màu trắng thành màu đen và đen đổi thành trắng bằng classList toggle</li>
+                <li>Viết hàm xử lý cho nút</li>
+                <li>Gắn sự kiện onclick cho nút và gọi hàm </li>
+            </ul>
+        </div>
+        <div class="border border-black mt-5">
+            <div class="flex flex-col justify-center items-center">
+                <div id="box" class="bg-blue-100 mt-5 flex flex-col justify-center items-center p-4">
+                    <p id="text" class="flex flex-row justify-center items-center mt-5">The box will charge its background color</p>
+                </div>
+                <button id="clickBtn" class="border-2 border-blue-200 bg-blue-800 text-white mt-5 mb-5 p-4">Toggle Background Color</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bài tập xây dựng light theme - dark theme -->
+    <div class="container mt-10">
+        <h3 class="border border-cyan-600 rounded-xl text-center p-4 text-3xl">Bài tập xây dựng light theme - dark theme</h3>
+        <div class="mt-5 border border-cyan-800 rounded-xl text-center">
+            <p>Yêu cầu: </p>
+            <ul>
+                <li>Cung cấp một nút button và một số nội dung chữ </li>
+                <li>Nhấn nút button sẽ thay đổi thẻ body, sẽ có thêm một class dark kích hoạt dark theme và click lần nữa sẽ tự động biến mất</li>
+                <li>Viết hàm xử lý cho nút</li>
+                <li>Gắn sự kiện onclick cho nút và gọi hàm</li>
+            </ul>
+        </div>
+        <div class="border-2 border-black mt-5 bg-sky-100 flex flex-col justify-center items-center dark:bg-black">
+            <h3 id="textH3" class="mt-5 text-2xl font-bold dark:text-white">Welcome to My Page</h3>
+            <p id="textP" class="mt-5 dark:text-white">Click the button below to toggle between light and dark themes</p>
+            <button id="btn" class="bg-cyan-500 rounded-xl p-3 mt-5 mb-5">Toggle Theme</button>
+        
+        </div>
+    </div>
+
+
+    <!-- Bài tập hiển thị mật khẩu -->
+
+    <div class="container mt-5">
+        <h3 class="border border-green-800 rounded-xl p-4 text-center text-3xl font-bold">Bài tập hiển thị mật khẩu</h3>
+        <div class="border border-green-950 rounded-2xl text-center mt-5">
+            <p>Yêu cầu:</p>
+            <ul>
+                <li>2 input được cung cấp và input mật khẩu có type là password</li>
+                <li>Nhất nút icon hình con mắt, thay đổi type input từ passord thành text</li>
+                <li>Viết hàm xử lý cho button có icon hình con mắt</li>
+                <li>Gắn sự kiện onclick cho nút và xử lý hiển thị</li>
+            </ul>
+        </div>
+        <div class="mt-5 border-2 border-black" id="content">
+            <h3 class="text-2xl text-black font-bold mt-5">Bài tập hiển thị thông tin người dùng</h3>
+
+            <div class="flex flex-col">
+            <!-- Tên tài khoản -->
+            <label for="" class="mt-5 font-semibold">Tài khoản: </label>
+            <div class="relative inline-block">
+                <input id="taiKhoan" type="text" placeholder="Nhập tài khoản" class="mt-5 rounded-lg border border-black" />
+            </div>
+
+            <!-- Nhập mật khẩu -->
+            <label for="" class="mt-5 font-semibold">Mật khẩu</label>
+            <div class="relative inline-block" id="content_pw">
+                <input id="password" type="password" placeholder="Nhập mật khẩu" class="mt-5 rounded-lg border border-black" />
+                <!-- Icon button -->
+                <button id="togglePassword" class="absolute right-2 ">
+                    👁️
+                </button>
+            </div>
+            <!-- Đăng nhập -->
+            <div>
+            <button id="dangNhap" class="mt-5 text-white bg-black rounded-2xl p-2 mb-5">Đăng nhập</button>
+            <div id="hienThi" class="mt-5"></div>
+        </div>
+        </div>
+        </div>
+    </div>
     <script src="./js/main.js"></script>
 </body>
 </html>
