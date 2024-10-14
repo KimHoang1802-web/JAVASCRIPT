@@ -71,13 +71,32 @@ document.querySelector("#btn").onclick = function(){
 
 // Bài tập hiển thị mật khẩu
 // Xử lý button con mắt
-document.querySelector("#togglePassword").onclick = function(){
-    let tagP = document.createElement('p');
-    let password = document.querySelector("#password").value;
-    tagP.innerHTML = password;
-    let content_pw = document.querySelector("#content_pw");
-    content_pw.appendChild(tagP);
-}
+// document.querySelector("#togglePassword").onclick = function(){
+//     let tagP = document.createElement('p');
+//     let password = document.querySelector("#password").value;
+//     tagP.innerHTML = password;
+//     let content_pw = document.querySelector("#content_pw");
+//     content_pw.appendChild(tagP);
+// }
+// // Xử lý nút đăng nhập
+// document.querySelector("#dangNhap").onclick = function(){
+//     let hienThi = document.querySelector("#hienThi");
+//     hienThi.innerHTML = "Đăng nhập thành công";
+    
+// }
+
+// Xử lý nút con mắt
+    let togglePassword = document.getElementById("togglePassword");
+    let passwordInput = document.getElementById("password");
+    togglePassword.onclick = function() {
+        if (passwordInput.type === "password") {
+            passwordInput.type = "text";   
+            this.textContent = "";       
+        } else {
+            passwordInput.type = "password";  
+            this.textContent = "";
+        }
+    }
 // Xử lý nút đăng nhập
 document.querySelector("#dangNhap").onclick = function(){
     let hienThi = document.querySelector("#hienThi");
